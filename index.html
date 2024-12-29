@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Text Extractor with OCR and Summary</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PDF Text Extractor with Summary & Visualization</h1>
+            <p>Upload a PDF to extract text, generate a summary, and visualize data!</p>
+        </header>
+        
+        <section class="upload-section">
+            <input type="file" id="pdfUpload" accept="application/pdf">
+            <button id="extractTextButton" class="btn">Extract Text & Visualize</button>
+        </section>
+
+        <section class="output-section">
+            <h2>Summary</h2>
+            <p id="summaryText">Summary will appear here...</p>
+
+            <h2>Extracted Text</h2>
+            <div id="extractedText">The extracted text will appear here.</div>
+
+            <h2>Data Visualization (Chart)</h2>
+            <canvas id="chart" width="400" height="400"></canvas>
+        </section>
+    </div>
+
+    <!-- Include PDF.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    
+    <!-- Include Tesseract.js for OCR -->
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@2.1.1/dist/tesseract.min.js"></script>
+
+    <!-- Include Chart.js for generating charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

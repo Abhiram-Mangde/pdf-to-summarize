@@ -1,2 +1,8 @@
-# pdf-to-summarize
-Use this tool to input any Pdf and get a summarized and key point from the pdf.
+# PDF Summarizer Tool
+This tool extracts text, summarizes content, and extracts diagrams from PDFs.
+
+## Features
+- Extract text and images from PDFs
+- Generate concise summaries using AI
+- Export results in a structured format
+
